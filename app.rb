@@ -14,7 +14,7 @@ get '/' do
 end
 
 post '/names' do
-  @@player = Player.new(params[:first_name],params[:last_name])
+   @@player = Player.new(params[:first_name],params[:last_name])
    @first_name = @@player.first_name
    @last_name = @@player.last_name
    erb :play
